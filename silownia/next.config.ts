@@ -1,6 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  output: "export",
+  basePath: "/silka",
+  images: { unoptimized: true },
+
   transpilePackages: [
     "three",
     "@react-three/fiber",
